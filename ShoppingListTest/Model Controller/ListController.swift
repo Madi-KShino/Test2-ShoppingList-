@@ -45,6 +45,17 @@ class ListController {
         saveToPersistentStore()
     }
     
+    func deleteAll() {
+        let request: NSFetchRequest<NSFetchRequestResult> = List.fetchRequest()
+        let batchDelete = NSBatchDeleteRequest(fetchRequest: request)
+        let moc = CoreDataStack.managedObjectContext
+        do {
+            try moc.execute(batchDelete)
+        } catch {
+            print(error.localizedDescription)
+        }
+    }
+    
     //MARK: - Persistence
     func saveToPersistentStore() {
         do {

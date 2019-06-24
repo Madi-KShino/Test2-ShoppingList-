@@ -67,7 +67,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="SHOPPING LIST" id="NQ9-qv-edn">
-                        <barButtonItem key="leftBarButtonItem" systemItem="trash" id="UnY-8Z-mqM"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="trash" id="UnY-8Z-mqM">
+                            <connections>
+                                <action selector="deleteButtonTapped:" destination="ndS-kq-8yb" id="pgo-BZ-GLP"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="EZt-eA-9wV">
                             <connections>
                                 <action selector="addButtonTapped:" destination="ndS-kq-8yb" id="FwQ-yu-RrS"/>

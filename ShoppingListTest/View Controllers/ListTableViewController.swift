@@ -27,6 +27,18 @@ class ListTableViewController: UITableViewController, AddItemAlertDelegate {
         addNewItemAlert()
     }
     
+    @IBAction func deleteButtonTapped(_ sender: Any) {
+        let alertController = UIAlertController(title: "Delete All", message: "Are you sure?!", preferredStyle: .alert)
+        let cancelAction = UIAlertAction(title: "Wait, No!", style: .cancel, handler: nil)
+        let deleteAction = UIAlertAction(title: "Im Sure", style: .default) { (_) in
+            ListController.sharedInstance.deleteAll()
+            self.tableView.reloadData()
+        }
+        alertController.addAction(cancelAction)
+        alertController.addAction(deleteAction)
+        present(alertController, animated: true)
+    }
+    
     // MARK: - Table View
     override func numberOfSections(in tableView: UITableView) -> Int {
         return ListController.sharedInstance.fetchedResultsController.sections?.count ?? 0
