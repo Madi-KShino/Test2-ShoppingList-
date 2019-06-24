@@ -16,6 +16,7 @@
 		53C1D5F422C06E4800826354 /* List+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C1D5F322C06E4800826354 /* List+Convenience.swift */; };
 		53C1D5F822C06E9300826354 /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C1D5F722C06E9300826354 /* ListController.swift */; };
 		53C1D5FA22C0774900826354 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C1D5F922C0774900826354 /* ListTableViewController.swift */; };
+		53C1D5FC22C0781B00826354 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C1D5FB22C0781B00826354 /* ListTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		53C1D5F322C06E4800826354 /* List+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "List+Convenience.swift"; sourceTree = "<group>"; };
 		53C1D5F722C06E9300826354 /* ListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListController.swift; sourceTree = "<group>"; };
 		53C1D5F922C0774900826354 /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
+		53C1D5FB22C0781B00826354 /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 		53C1D5F622C06E6700826354 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				53C1D5FB22C0781B00826354 /* ListTableViewCell.swift */,
 				53C1D5F922C0774900826354 /* ListTableViewController.swift */,
 			);
 			path = "View Controllers";
@@ -187,6 +190,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53C1D5FC22C0781B00826354 /* ListTableViewCell.swift in Sources */,
 				53C1D5F222C06E3100826354 /* CoreDataStack.swift in Sources */,
 				53C1D5F822C06E9300826354 /* ListController.swift in Sources */,
 				53C1D5F422C06E4800826354 /* List+Convenience.swift in Sources */,
