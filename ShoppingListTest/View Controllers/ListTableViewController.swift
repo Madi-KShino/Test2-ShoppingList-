@@ -32,6 +32,7 @@ class ListTableViewController: UITableViewController, AddItemAlertDelegate {
         let cancelAction = UIAlertAction(title: "Wait, No!", style: .cancel, handler: nil)
         let deleteAction = UIAlertAction(title: "Im Sure", style: .default) { (_) in
             ListController.sharedInstance.deleteAll()
+            CoreDataStack.managedObjectContext.reset()
             self.tableView.reloadData()
         }
         alertController.addAction(cancelAction)
