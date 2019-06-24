@@ -8,22 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		53C1D5DA22C0699A00826354 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C1D5D922C0699A00826354 /* AppDelegate.swift */; };
-		53C1D5DC22C0699A00826354 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C1D5DB22C0699A00826354 /* ViewController.swift */; };
 		53C1D5DF22C0699A00826354 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53C1D5DD22C0699A00826354 /* Main.storyboard */; };
 		53C1D5E222C0699A00826354 /* ShoppingListTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 53C1D5E022C0699A00826354 /* ShoppingListTest.xcdatamodeld */; };
 		53C1D5E422C0699B00826354 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53C1D5E322C0699B00826354 /* Assets.xcassets */; };
 		53C1D5E722C0699B00826354 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53C1D5E522C0699B00826354 /* LaunchScreen.storyboard */; };
+		53C1D5F222C06E3100826354 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C1D5F122C06E3100826354 /* CoreDataStack.swift */; };
+		53C1D5F422C06E4800826354 /* List+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C1D5F322C06E4800826354 /* List+Convenience.swift */; };
+		53C1D5F822C06E9300826354 /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C1D5F722C06E9300826354 /* ListController.swift */; };
+		53C1D5FA22C0774900826354 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C1D5F922C0774900826354 /* ListTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		53C1D5D622C0699A00826354 /* ShoppingListTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoppingListTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53C1D5D922C0699A00826354 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		53C1D5DB22C0699A00826354 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		53C1D5DE22C0699A00826354 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		53C1D5E122C0699A00826354 /* ShoppingListTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ShoppingListTest.xcdatamodel; sourceTree = "<group>"; };
 		53C1D5E322C0699B00826354 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		53C1D5E622C0699B00826354 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		53C1D5E822C0699B00826354 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53C1D5F122C06E3100826354 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		53C1D5F322C06E4800826354 /* List+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "List+Convenience.swift"; sourceTree = "<group>"; };
+		53C1D5F722C06E9300826354 /* ListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListController.swift; sourceTree = "<group>"; };
+		53C1D5F922C0774900826354 /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,58 @@
 		53C1D5D822C0699A00826354 /* ShoppingListTest */ = {
 			isa = PBXGroup;
 			children = (
+				53C1D5EF22C06C1E00826354 /* View */,
+				53C1D5F022C06C2400826354 /* Model */,
+				53C1D5F522C06E5D00826354 /* Model Controller */,
+				53C1D5F622C06E6700826354 /* View Controllers */,
+				53C1D5EE22C06C0200826354 /* Resources */,
+			);
+			path = ShoppingListTest;
+			sourceTree = "<group>";
+		};
+		53C1D5EE22C06C0200826354 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				53C1D5D922C0699A00826354 /* AppDelegate.swift */,
-				53C1D5DB22C0699A00826354 /* ViewController.swift */,
-				53C1D5DD22C0699A00826354 /* Main.storyboard */,
 				53C1D5E322C0699B00826354 /* Assets.xcassets */,
 				53C1D5E522C0699B00826354 /* LaunchScreen.storyboard */,
 				53C1D5E822C0699B00826354 /* Info.plist */,
-				53C1D5E022C0699A00826354 /* ShoppingListTest.xcdatamodeld */,
 			);
-			path = ShoppingListTest;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		53C1D5EF22C06C1E00826354 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				53C1D5DD22C0699A00826354 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		53C1D5F022C06C2400826354 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				53C1D5E022C0699A00826354 /* ShoppingListTest.xcdatamodeld */,
+				53C1D5F122C06E3100826354 /* CoreDataStack.swift */,
+				53C1D5F322C06E4800826354 /* List+Convenience.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		53C1D5F522C06E5D00826354 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				53C1D5F722C06E9300826354 /* ListController.swift */,
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
+		53C1D5F622C06E6700826354 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				53C1D5F922C0774900826354 /* ListTableViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +187,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53C1D5DC22C0699A00826354 /* ViewController.swift in Sources */,
+				53C1D5F222C06E3100826354 /* CoreDataStack.swift in Sources */,
+				53C1D5F822C06E9300826354 /* ListController.swift in Sources */,
+				53C1D5F422C06E4800826354 /* List+Convenience.swift in Sources */,
+				53C1D5FA22C0774900826354 /* ListTableViewController.swift in Sources */,
 				53C1D5DA22C0699A00826354 /* AppDelegate.swift in Sources */,
 				53C1D5E222C0699A00826354 /* ShoppingListTest.xcdatamodeld in Sources */,
 			);
@@ -287,7 +339,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ShoppingListTest/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ShoppingListTest/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +356,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ShoppingListTest/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ShoppingListTest/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
